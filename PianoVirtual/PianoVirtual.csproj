@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{54F9BA57-B018-4AD7-AAAE-DF40CE27F346}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PianoVirtual</RootNamespace>
+    <AssemblyName>PianoVirtual</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Libre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Libre.Designer.cs">
+      <DependentUpon>Libre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Notas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Notas.Designer.cs">
+      <DependentUpon>Notas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Piano.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Libre.resx">
+      <DependentUpon>Libre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Notas.resx">
+      <DependentUpon>Notas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ab.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\B.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bb.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\D.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Db.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\E.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Eb.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\F.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\G.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gb.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icono.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Piano.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icono.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fondo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\W1RA.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Melodia.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clean.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Play.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Backa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\playy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\del.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\regreso.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

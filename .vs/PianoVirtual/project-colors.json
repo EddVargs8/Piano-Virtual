@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "54f9ba57-b018-4ad7-aaae-df40ce27f346": {
+      "ProjectGuid": "54f9ba57-b018-4ad7-aaae-df40ce27f346",
+      "DisplayName": "PianoVirtual",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
